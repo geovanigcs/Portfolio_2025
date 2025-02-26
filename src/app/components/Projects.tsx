@@ -5,6 +5,7 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import grainImage from "@/assets/images/grain.jpg";
 import Image from "next/image";
+import { SectionHeader } from "./ui/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -49,11 +50,7 @@ export const Projects = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text">Projetos</p>
-        </div>
-        <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Projetos em destaques</h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">Veja como eu transformo a concepção do envolvimento na experiência digital</p>
+        <SectionHeader eyebrow="Projetos" title="Projetos em destaques" description="Veja como eu transformo a concepção do envolvimento na experiência digital" />
         <div className="flex md:mt-20 flex-col mt-10 gap-20">
           {portfolioProjects.map(project => (
             <div key={project.title} className="bg-gray-800 p-8 rounded-3xl relative z-0 after:-z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none md:px-10 md:pt-12 lg:pt-16 lg:px-20">
@@ -81,7 +78,7 @@ export const Projects = () => {
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
-              </div>
+                </div>
                 <div className="relative">
                   <Image src={project.image} alt={project.title} className="mt-8 -mb-8 lg:-mb-0 lg:mt-8 lg:absolute lg:h-full lg:w-auto lg:max-w-none lg:-mb-18" />
                 </div>

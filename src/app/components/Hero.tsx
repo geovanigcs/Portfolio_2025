@@ -4,8 +4,8 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from '@/assets/icons/star.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
-import { HeroOrbit } from "@/components/HeroOrbit";
-import { Avatar } from "./ui/avatar";
+import { HeroOrbit } from "@/app/components/ui/HeroOrbit";
+import { Avatar } from "./ui/Avatar";
 
 export const Hero = () => {
   return (
