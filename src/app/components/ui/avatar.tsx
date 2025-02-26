@@ -15,7 +15,7 @@ export const Avatar: React.FC = () => {
             gsap.to('.hair', { yPercent: y / 15, xPercent: x / 22 });
             gsap.to('.mouth', { yPercent: y / 5, xPercent: x / 3 });
             gsap.to('.beard', { yPercent: y / 15, xPercent: x / 22 });
-            gsap.to('.ear', { yPercent: (y / 1.5) * -1, xPercent: (x / 10) * -1 });
+            gsap.to('.ear', { yPercent: (y / 6.5) * -1, xPercent: (x / 10) * -1 });
             gsap.to('.shadow', { yPercent: y / 30, xPercent: x / 40 });
         };
 
@@ -26,13 +26,13 @@ export const Avatar: React.FC = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center" style={{ width:"500px" }} >
+        <div className="flex flex-col items-center" style={{ width:"200px" }} >
             <svg viewBox="0 0 2306 2306" fill="none">
                 <g clip-path="url(#clip0_53_30)">
                     {/* <path className="bg"
                 d="M1153.01 2305.98C1789.79 2305.98 2306 1789.77 2306 1152.99C2306 516.212 1789.79 0 1153.01 0C516.228 0 0.0159302 516.212 0.0159302 1152.99C0.0159302 1789.77 516.228 2305.98 1153.01 2305.98Z"
                 fill="#959595" />
-            <mask id="mask0_53_30" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-31" width="2306"
+            <mask id="mask0_53_30" style={{ WebkitMaskType: 'luminance', maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="0" y="-31" width="2306"
                 height="2306">
                 <path
                     d="M1152.99 2274.98C1789.77 2274.98 2305.98 1758.77 2305.98 1121.99C2305.98 485.212 1789.77 -31 1152.99 -31C516.212 -31 0 485.212 0 1121.99C0 1758.77 516.212 2274.98 1152.99 2274.98Z"
