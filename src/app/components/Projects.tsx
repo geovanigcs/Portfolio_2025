@@ -3,9 +3,9 @@ import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
-import grainImage from "@/assets/images/grain.jpg";
 import Image from "next/image";
 import { SectionHeader } from "./ui/SectionHeader";
+import { Card } from "./ui/Card";
 
 const portfolioProjects = [
   {
@@ -53,8 +53,7 @@ export const Projects = () => {
         <SectionHeader eyebrow="Projetos" title="Projetos em destaques" description="Veja como eu transformo a concepção do envolvimento na experiência digital" />
         <div className="flex md:mt-20 flex-col mt-10 gap-20">
           {portfolioProjects.map(project => (
-            <div key={project.title} className="bg-gray-800 p-8 rounded-3xl relative z-0 after:-z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none md:px-10 md:pt-12 lg:pt-16 lg:px-20">
-              <div className="absolute inset-0 -z-10 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
+            <Card key={project.title} className="px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20">
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="font-bold uppercase tracking-widest text-sm gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text inline-flex">
@@ -83,7 +82,7 @@ export const Projects = () => {
                   <Image src={project.image} alt={project.title} className="mt-8 -mb-8 lg:-mb-0 lg:mt-8 lg:absolute lg:h-full lg:w-auto lg:max-w-none lg:-mb-18" />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
