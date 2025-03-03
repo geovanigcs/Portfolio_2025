@@ -57,7 +57,9 @@ export const Hero = () => {
           /> */}
           <Avatar />
           <div className="bg-black border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 rounded-full size-2.5"></div>
+            <div className="bg-green-500 rounded-full size-2.5 relative">
+              <div className="bg-green-500 rounded-full absolute inset-0 animate-ping-large"></div>
+            </div>
             <div className="text-sm font-medium">Avalie meus novos projetos</div>
           </div>
         </div>
