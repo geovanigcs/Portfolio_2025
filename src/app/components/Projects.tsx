@@ -52,8 +52,9 @@ export const Projects = () => {
       <div className="container">
         <SectionHeader eyebrow="Projetos" title="Projetos em destaques" description="Veja como eu transformo a concepção do envolvimento na experiência digital" />
         <div className="flex md:mt-20 flex-col mt-10 gap-20">
-          {portfolioProjects.map(project => (
-            <Card key={project.title} className="px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20">
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card key={project.title} className="px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 sticky top-16"
+            style={{ top: `calc(64px + ${projectIndex * 40}px`}}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="font-bold uppercase tracking-widest text-sm gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text inline-flex">
