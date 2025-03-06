@@ -9,8 +9,6 @@ import TypescriptIcon from '@/assets/icons/typescript.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import NextjsIcon from '@/assets/icons/nextjs.svg';
 import Css3Icon from '@/assets/icons/css3.svg';
-import mapImage from '@/assets/images/map.png';
-import smileMemoji from '@/assets/images/memoji-smile.png';
 import { CardHeader } from "./ui/CardHeader";
 import { ToolBoxItems } from "./ui/ToolBoxItems";
 import { motion } from "framer-motion";
@@ -100,7 +98,7 @@ export const About = () => {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid-cols-1 gap-8 grid md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1">
-            <Image src={gigio1Perfil} alt="Mapa" className="h-full w-full object-cover object-left-top" />
+            <Image src={gigio1Perfil} fill alt="Perfil" className="h-full w-full object-cover object-left-top" />
             </Card>
             <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
               <CardHeader className="" title="Linguagens e Ferramentas" description="Explore as tecnologias e ferramentas que eu uso para criar projetos digitais excepcionais." />
@@ -121,7 +119,7 @@ export const About = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image src={gigio2Perfil} alt="Mapa" className="h-full w-full object-cover object-left-top" />
+              <Image src={gigio2Perfil} fill alt="Perfil" className="h-full w-full object-cover object-left-top" />
             </Card>
           </div>
         </div>

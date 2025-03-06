@@ -2,6 +2,11 @@ import barberPage from "@/assets/images/Capa Barber.png";
 import burgerPage from "@/assets/images/Capa Burger.png";
 import financePage from "@/assets/images/Capa Finance.png";
 import dronePage from "@/assets/images/Capa Drone.png";
+import droneMonitor from "@/assets/images/Drone-Monitor.png";
+import barberMonitor from "@/assets/images/Barber-Monitor.png";
+import financeMonitor from "@/assets/images/Finance-Monitor.png";
+import burgerMonitor from "@/assets/images/Burger-Monitor.png";
+
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import Image from "next/image";
@@ -19,7 +24,7 @@ const portfolioProjects = [
       { title: "Taxa de conversão aumentada em 30% com sistema de agendamentos eficiente" },
     ],
     link: "",
-    image: barberPage,
+    image: barberMonitor,
   },
   {
     company: "Gigio's",
@@ -31,7 +36,7 @@ const portfolioProjects = [
       { title: "Número de pedidos mensais crescido em 25% após melhorias na usabilidade" },
     ],
     link: "",
-    image: burgerPage,
+    image: burgerMonitor,
   },
   {
     company: "Gigio's",
@@ -43,7 +48,7 @@ const portfolioProjects = [
       { title: "Engajamento do usuário aumentado em 45% com lembretes automáticos de pagamentos" },
     ],
     link: "",
-    image: financePage,
+    image: financeMonitor,
   },
   {
     company: "Gigio's",
@@ -55,7 +60,7 @@ const portfolioProjects = [
       { title: "Engajamento do cliente elevado em 30% através de experiências visuais envolventes" },
     ],
     link: "https://drone-store-trqs.vercel.app",
-    image: dronePage,
+    image: droneMonitor,
   },
 ];
 

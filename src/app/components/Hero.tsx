@@ -1,7 +1,7 @@
 import ArrowDown from "@/assets/icons/arrow-down.svg"
 import grainImage from "@/assets/images/grain.jpg"
-import { Avatar } from "./ui/Avatar"
 import { CodeElements, FloatingUIElements, GeometricShapes, DesignElements } from "./ui/HeroOrbitElement"
+import { Avatar } from "./ui/avatar"
 
 export const Hero = () => {
   return (

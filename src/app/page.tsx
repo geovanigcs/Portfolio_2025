@@ -4,8 +4,8 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
-import { Tape } from "./components/Tape";
 import { Designer } from "./components/Designer";
+import Tape from "./components/Tape";
 
 
 export default function Home() {
