@@ -1,6 +1,7 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import barberPage from "@/assets/images/Capa Barber.png";
+import burgerPage from "@/assets/images/Capa Burger.png";
+import financePage from "@/assets/images/Capa Finance.png";
+import dronePage from "@/assets/images/Capa Drone.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import Image from "next/image";
@@ -9,40 +10,52 @@ import { Card } from "./ui/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Gigio's",
+    year: "2024",
+    title: "Gigio's Barber",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Experiência do usuário aprimorada em 45% com agendamentos simplificados" },
+      { title: "Velocidade do site otimizada em 60%, reduzindo o tempo de espera" },
+      { title: "Taxa de conversão aumentada em 30% com sistema de agendamentos eficiente" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "",
+    image: barberPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Gigio's",
+    year: "2025",
+    title: "Gigio's Burger",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Satisfação do cliente aumentada em 50% com interface intuitiva de pedidos" },
+      { title: "Tempo de entrega reduzido em 40% com otimização de rotas" },
+      { title: "Número de pedidos mensais crescido em 25% após melhorias na usabilidade" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "",
+    image: burgerPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Gigio's",
+    year: "2025",
+    title: "Gigio's Finance",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Precisão nas finanças aprimorada em 35% com relatórios detalhados" },
+      { title: "Tempo de gerenciamento de contas reduzido em 50% com interface simplificada" },
+      { title: "Engajamento do usuário aumentado em 45% com lembretes automáticos de pagamentos" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "",
+    image: financePage,
+  },
+  {
+    company: "Gigio's",
+    year: "2024",
+    title: "Gigio's Store Drone",
+    results: [
+      { title: "Interatividade do usuário aumentada em 40% com animações dinâmicas de produtos" },
+      { title: "Taxa de visualização de produtos melhorada em 50% com animações atraentes" },
+      { title: "Engajamento do cliente elevado em 30% através de experiências visuais envolventes" },
+    ],
+    link: "https://drone-store-trqs.vercel.app",
+    image: dronePage,
   },
 ];
 

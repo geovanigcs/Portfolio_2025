@@ -2,7 +2,6 @@
 
 import { Card } from "./ui/Card";
 import { SectionHeader } from "./ui/SectionHeader";
-import bookImage from '@/assets/images/book-cover.png'
 import Image from "next/image";
 import JavascriptIcon from '@/assets/icons/javascript.svg';
 import Html5Icon from '@/assets/icons/html5.svg';
@@ -16,6 +15,8 @@ import { CardHeader } from "./ui/CardHeader";
 import { ToolBoxItems } from "./ui/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import gigio1Perfil from "@/assets/images/gigio1.jpg"
+import gigio2Perfil from "@/assets/images/gigio2.jpg"
 
 
 const toolboxItems = [
@@ -99,10 +100,7 @@ export const About = () => {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid-cols-1 gap-8 grid md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] p-0 md:col-span-2 lg:col-span-1">
-              <CardHeader title="Meus livros" description="Explore os livros que me inspiraram." />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Capa de livro" />
-              </div>
+            <Image src={gigio1Perfil} alt="Mapa" className="h-full w-full object-cover object-left-top" />
             </Card>
             <Card className="h-[320px] p-0 md:col-span-3 lg:col-span-2">
               <CardHeader className="" title="Linguagens e Ferramentas" description="Explore as tecnologias e ferramentas que eu uso para criar projetos digitais excepcionais." />
@@ -123,10 +121,7 @@ export const About = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image src={mapImage} alt="Mapa" className="h-full w-full object-cover object-left-top" />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 bg-gradient-to-r rounded-full from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                <Image src={smileMemoji} alt="Sorriso" className="size-20" />
-              </div>
+              <Image src={gigio2Perfil} alt="Mapa" className="h-full w-full object-cover object-left-top" />
             </Card>
           </div>
         </div>
