@@ -27,6 +27,9 @@ const config: Config = {
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
+        "move-left": "move-left 2s ease-in-out infinite",
+        "move-right": "move-right 2s ease-in-out infinite",
+        "move-alternate": "move-alternate 4s ease-in-out infinite",
       },
       keyframes: {
         "ping-large": {
@@ -35,9 +38,37 @@ const config: Config = {
             opacity: "0",
           },
         },
+        "move-left": {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
+        "move-right": {
+          "0%": {
+            transform: "translateX(-50%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        "move-alternate": {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(-50%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

@@ -1,3 +1,5 @@
+"use client"
+
 import barberPage from "@/assets/images/Capa Barber.png"
 import burgerPage from "@/assets/images/Capa Burger.png"
 import financePage from "@/assets/images/Capa Finance.png"
@@ -6,6 +8,7 @@ import Image from "next/image"
 import { SectionHeader } from "./ui/SectionHeader"
 import { Card } from "./ui/Card"
 import { Fragment } from "react"
+import { motion } from "framer-motion"
 
 const designProjects = [
   {
@@ -36,7 +39,11 @@ export const Designer = () => {
           description="Uma amostra visual dos projetos de design que desenvolvi."
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip py-4 -my-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex text-center text-white/60 md:text-lg lg:text-xl pr-8 gap-8 flex-none animate-move-left [animation-duration:60s]">
+          <motion.div
+            className="flex text-center text-white/60 md:text-lg lg:text-xl pr-8 gap-8 flex-none"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ repeat: Infinity, ease: "linear", duration: 60 }}
+          >
             {[...new Array(2)].fill(0).map((_, index) => (
               <Fragment key={index}>
                 {designProjects.map((project) => (
@@ -56,10 +63,9 @@ export const Designer = () => {
                 ))}
               </Fragment>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
   )
 }
-
