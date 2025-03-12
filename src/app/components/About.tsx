@@ -9,6 +9,7 @@ import TypescriptIcon from '@/assets/icons/typescript.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import NextjsIcon from '@/assets/icons/nextjs.svg';
 import Css3Icon from '@/assets/icons/css3.svg';
+import ux from '@/assets/icons/ux.svg';
 import { CardHeader } from "./ui/CardHeader";
 import { ToolBoxItems } from "./ui/ToolBoxItems";
 import { motion } from "framer-motion";
@@ -41,6 +42,10 @@ const toolboxItems = [
   {
     title: 'CSS3',
     iconType: Css3Icon,
+  },
+  {
+    title: 'UX/UI',
+    iconType: ux,
   },
 ]
 

@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className={twMerge(inter.variable, calistoga.variable, "bg-[#030712] text-white antialiased font-sans")}>{children}</body>
     </html>
   );

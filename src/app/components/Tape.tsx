@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import StarIcon from '@/assets/icons/star.svg';
+import CheckIcon from '@/assets/icons/checkIcon.svg';
 
 const words = [
   "Performace",
@@ -32,7 +32,7 @@ export default function Tape() {
                 {words.map((word) => (
                   <div key={`${containerIndex}-${word}`} className="inline-flex gap-4 items-center">
                     <span className="text-gray-900 uppercase font-extrabold text-sm">{word}</span>
-                  <StarIcon className="size-6 text-gray-900 -rotate-10" />
+                  <CheckIcon className="size-6 text-gray-900 -rotate-10" />
                   </div>
                 ))}
               </div>

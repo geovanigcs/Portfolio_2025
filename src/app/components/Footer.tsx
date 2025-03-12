@@ -4,19 +4,19 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 const footerLinks = [
   {
     title: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/geovanigcs/',
   },
   {
     title: 'Github',
-    href: '#',
+    href: 'https://github.com/geovanigcs',
   },
   {
     title: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/geovanicordeirodev/',
   },
   {
     title: 'E-mail',
-    href: '#',
+    href: 'mailto:geovanigcs.dev@gmail',
   },
 ]
 
@@ -27,14 +27,14 @@ export const Footer = () => {
       <div className="container">
         <div className="border-t md:flex-row md:justify-between border-white/15 py-16 text-sm flex flex-col items-center gap-8">
           <div className="text-white/40">&copy; Geovani Cordeiro 2025</div>
-          <nav className="flex flex-col items-center gap-8 md:flex-row">
-            {footerLinks.map((link) =>(
-              <a href="#" key={link.title} className="inline-flex items-center gap-1.5">
-                <span className='font-semibold'>{link.title }</span>
-                <ArrowUpRightIcon className="size-4" />
-              </a>
-            ))}
-          </nav>
+            <nav className="flex flex-col items-center gap-8 md:flex-row">
+              {footerLinks.map((link) =>(
+                <a href="#" key={link.title} className="inline-flex items-center gap-1.5">
+                  <span className='font-semibold'>{link.title }</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </a>
+              ))}
+            </nav>
           </div>
         </div>
     </footer>
