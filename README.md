@@ -5,19 +5,19 @@ Bem-vindo ao **Portfólio Front-End e UX/UI**, uma vitrine virtual dedicada a de
 O objetivo deste portfólio é apresentar uma seleção de projetos que destacam minhas habilidades em design de experiência do usuário (UX) e design de interface do usuário (UI). Através de um design intuitivo e animações cativantes, busco oferecer uma experiência agradável e interativa, permitindo que os visitantes explorem meu trabalho de forma dinâmica.
 
 ## 💡 Abordagem de Design
--Neste portfólio, utilizei princípios de design centrado no usuário, focando em:
+Neste portfólio, utilizei princípios de design centrado no usuário, focando em:
 
--**Navegação Intuitiva**: Estrutura clara e fácil de navegar para uma experiência de visualização agradável.
--**Animações**: Implementação de animações suaves com GSAP e Framer Motion para melhorar a interação do usuário.
--**Estética Visual**: Design moderno e atraente, com atenção aos detalhes para proporcionar uma experiência visual agradável.
+- **Navegação Intuitiva**: Estrutura clara e fácil de navegar para uma experiência de visualização agradável.
+- **Animações**: Implementação de animações suaves com GSAP e Framer Motion para melhorar a interação do usuário.
+- **Estética Visual**: Design moderno e atraente, com atenção aos detalhes para proporcionar uma experiência visual agradável.
 
 
 ## ⚙️ Tecnologias Utilizadas
--**Next.js**: Framework React para construção de aplicações web.
--**GSAP**: Biblioteca para animações de alta performance.
--**Framer Motion**: Biblioteca para animações e transições em React.
--**Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
--**Animações Gerais**: Utilização de animações para aprimorar a apresentação do UX/UI.
+- **Next.js**: Framework React para construção de aplicações web.
+- **GSAP**: Biblioteca para animações de alta performance.
+- **Framer Motion**: Biblioteca para animações e transições em React.
+- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
+- **Animações Gerais**: Utilização de animações para aprimorar a apresentação do UX/UI.
 
 
 ## 📸 Imagens do Portfólio
@@ -49,11 +49,11 @@ npm run dev
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Se você deseja contribuir, siga estas etapas:
 
-Fork o repositório.
-Crie uma nova branch (git checkout -b feature/nova-funcionalidade).
-Faça suas alterações e commit (git commit -m 'Adiciona nova funcionalidade').
-Envie para o repositório remoto (git push origin feature/nova-funcionalidade).
-Abra um Pull Request.
+- Fork o repositório.
+- Crie uma nova branch (git checkout -b feature/nova-funcionalidade).
+- Faça suas alterações e commit (git commit -m 'Adiciona nova funcionalidade').
+- Envie para o repositório remoto (git push origin feature/nova-funcionalidade).
+- Abra um Pull Request.
 
 
 ## 📞 Contato
