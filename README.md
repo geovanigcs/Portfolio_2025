@@ -22,4 +22,4 @@ Projeto 2: Descrição breve do projeto e suas características.
 Projeto 3: Descrição breve do projeto e suas características.
 
 📸 Imagens do Portfólio
-![Imagem do Projeto](public/portfolio.png)
+![Imagem do Projeto](/portfolio.png)
