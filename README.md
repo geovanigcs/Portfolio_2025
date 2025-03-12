@@ -1,4 +1,4 @@
-🌐 Portfólio Front-End e UX/UI 💻
+🌐 Portfólio Front-End 💻
 Bem-vindo ao Portfólio Front-End e UX/UI, uma vitrine virtual dedicada a demonstrar minhas habilidades e projetos como desenvolvedor front-end e designer UX/UI. Este projeto foi desenvolvido para mostrar minha evolução na área e as técnicas que utilizei para criar experiências digitais envolventes.
 
 🎯 Objetivo do Projeto
@@ -22,4 +22,45 @@ Projeto 2: Descrição breve do projeto e suas características.
 Projeto 3: Descrição breve do projeto e suas características.
 
 📸 Imagens do Portfólio
-![Imagem do Projeto](/portfolio.png)
+![Imagem do Projeto](https://github.com/geovanigcs/Portfolio_2025/blob/main/src/app/public/Portfolio.png)
+
+## ⚙️ Como Executar o Projeto
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/geovanigcs/Portfolio_2025.git 
+```
+2. Navegue até o diretório do projeto: 
+  ```bash
+cd drone-store
+```
+3. Instale as dependências:
+```bash
+ npm install
+```
+4. Inicie o servidor de desenvolvimento:
+```bash 
+npm run dev
+```
+5. Acesse o projeto em seu navegador:
+```bash 
+[http://localhost:3000](http://localhost:3000)
+```
+
+🤝 Contribuição
+Contribuições são bem-vindas! Se você deseja contribuir, siga estas etapas:
+
+Fork o repositório.
+Crie uma nova branch (git checkout -b feature/nova-funcionalidade).
+Faça suas alterações e commit (git commit -m 'Adiciona nova funcionalidade').
+Envie para o repositório remoto (git push origin feature/nova-funcionalidade).
+Abra um Pull Request.
+📞 Contato
+Para dúvidas ou sugestões, você pode entrar em contato através de:
+
+- Email: geovanigcs.dev@gmail.com
+- LinkedIn: [Geovani Cordeiro](https://www.linkedin.com/in/geovanicordeirodev/)
+- GitHub: [geovanigcs](https://github.com/geovanigcs)
+
+
+Agradeço por visitar meu Portfólio! Espero que você tenha uma ótima experiência! 🚀
