@@ -93,7 +93,6 @@ const hobbies = [
   },
 ]
 
-// Animation variants for the cards
 const cardVariants = {
   hidden: {
     opacity: 0,

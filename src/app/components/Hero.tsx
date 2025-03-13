@@ -8,7 +8,6 @@ import { Cursor, useTypewriter } from "react-simple-typewriter"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 
-// Animation variant for the avatar
 const avatarVariants = {
   hidden: {
     opacity: 0,
