@@ -14,10 +14,12 @@ export const Contact = () => {
               <p className="text-sm mt-2 md:text-base">Pronto para trazer o próximo projeto da sua vida? Me contate, eu posso te ajudar.</p>
             </div>
             <div className="">
-              <button className='gap-2 w-max border border-gray-900 text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl'>
-                <span className='font-semibold'>Entre em contato</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
+              <a href="mailto:geovanigcs.dev@gmail">
+                <button className='gap-2 w-max border border-gray-900 text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl'>
+                  <span className='font-semibold'>Entre em contato</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

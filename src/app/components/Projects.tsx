@@ -1,7 +1,3 @@
-import barberPage from "@/assets/images/Capa Barber.png";
-import burgerPage from "@/assets/images/Capa Burger.png";
-import financePage from "@/assets/images/Capa Finance.png";
-import dronePage from "@/assets/images/Capa Drone.png";
 import droneMonitor from "@/assets/images/Drone-Monitor.png";
 import barberMonitor from "@/assets/images/Barber-Monitor.png";
 import financeMonitor from "@/assets/images/Finance-Monitor.png";
@@ -59,20 +55,20 @@ const portfolioProjects = [
       { title: "Taxa de visualização de produtos melhorada em 50% com animações atraentes" },
       { title: "Engajamento do cliente elevado em 30% através de experiências visuais envolventes" },
     ],
-    link: "https://drone-store-trqs.vercel.app",
+    link: "https://storedrone.vercel.app/",
     image: droneMonitor,
   },
 ];
 
 export const Projects = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader eyebrow="Projetos" title="Projetos em destaques" description="Veja como eu transformo a concepção do envolvimento na experiência digital" />
         <div className="flex md:mt-20 flex-col mt-10 gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <Card key={project.title} className="px-8 pt-8 md:px-10 md:pt-12 lg:pt-16 lg:px-20 sticky top-16"
-            style={{ top: `calc(64px + ${projectIndex * 40}px`}}>
+              style={{ top: `calc(64px + ${projectIndex * 40}px)` }}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="font-bold uppercase tracking-widest text-sm gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text inline-flex">
@@ -90,7 +86,7 @@ export const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visite meu site</span>
                       <ArrowUpRightIcon className="size-4" />
