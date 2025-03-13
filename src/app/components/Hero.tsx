@@ -1,11 +1,24 @@
+'use client'
+
 import ArrowDown from "@/assets/icons/arrow-down.svg"
 import grainImage from "@/assets/images/grain.jpg"
 import { CodeElements, DesignElements } from "./ui/HeroOrbitElement"
 import { Avatar } from "./ui/avatar"
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export const Hero = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Olá, me chamo Geovani",
+      "Sou desenvolvedor",
+      "Também sou Designer",
+      "<Amo codar/>",
+    ],
+    loop: true,
+    delaySpeed: 2000,
+  });
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div id="hero" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})` }}></div>
         <div className="size-[620px] hero-ring"></div>
@@ -18,15 +31,21 @@ export const Hero = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <Avatar />
+        
           <div className="bg-black border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 rounded-full size-2.5 relative">
               <div className="bg-green-500 rounded-full absolute inset-0 animate-ping-large"></div>
             </div>
             <div className="text-sm font-medium">Avalie meus novos projetos</div>
           </div>
+          <h1 className="text-white/60 mt-2 text-1xl lg:text-2x1 font-semibold scroll-px-10">
+            <span>{text}</span>
+            <Cursor cursorColor="#4169E1" />
+          </h1>
         </div>
+        
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <h1 className="font-serif text-3xl  md:text-5xl text-center mt-2 tracking-wide">
             Criando experiências excepcionais para o usuário
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">

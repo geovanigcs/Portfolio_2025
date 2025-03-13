@@ -4,19 +4,19 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 const footerLinks = [
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/geovanigcs/',
+    point: 'https://www.instagram.com/geovanigcs/',
   },
   {
     title: 'Github',
-    href: 'https://github.com/geovanigcs',
+    point: 'https://github.com/geovanigcs',
   },
   {
     title: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/geovanicordeirodev/',
+    point: 'https://www.linkedin.com/in/geovanicordeirodev/',
   },
   {
     title: 'E-mail',
-    href: 'mailto:geovanigcs.dev@gmail',
+    point: 'mailto:geovanigcs.dev@gmail',
   },
 ]
 
@@ -29,7 +29,7 @@ export const Footer = () => {
           <div className="text-white/40">&copy; Geovani Cordeiro 2025</div>
             <nav className="flex flex-col items-center gap-8 md:flex-row">
               {footerLinks.map((link) =>(
-                <a href="#" key={link.title} className="inline-flex items-center gap-1.5">
+                <a href={link.point} key={link.title} className="inline-flex items-center gap-1.5">
                   <span className='font-semibold'>{link.title }</span>
                   <ArrowUpRightIcon className="size-4" />
                 </a>
@@ -38,5 +38,5 @@ export const Footer = () => {
           </div>
         </div>
     </footer>
-  );
-};
+  )
+}

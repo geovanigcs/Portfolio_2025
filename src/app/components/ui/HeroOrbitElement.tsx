@@ -12,12 +12,12 @@ export const CodeElements = () => {
           {'<div className="hero">'}
         </div>
       </HeroOrbit>
-      <HeroOrbit size={530} rotation={20}>
+      <HeroOrbit size={540} rotation={10}>
         <div className="font-mono text-xs text-pink-400/70 bg-gray-900/40 p-2 rounded border border-pink-500/20 animate-move-alternate">
           {"const [state, setState] = useState()"}
         </div>
       </HeroOrbit>
-      <HeroOrbit size={650} rotation={144}>
+      <HeroOrbit size={750} rotation={144}>
         <div className="font-mono text-xs text-amber-400/70 bg-gray-900/40 p-2 rounded border border-amber-500/20 animate-move-alternate">
           {"@keyframes float { ... }"}
         </div>
