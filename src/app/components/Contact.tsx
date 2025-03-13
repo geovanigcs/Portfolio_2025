@@ -17,7 +17,7 @@ const contactCardVariants = {
       type: "spring",
       stiffness: 300,
       damping: 15,
-      duration: 0.8,
+      duration: 1.5,
     },
   },
 }

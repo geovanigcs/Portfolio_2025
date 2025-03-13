@@ -1,28 +1,31 @@
-import type { Metadata } from "next";
-import { Calistoga, Inter } from 'next/font/google'
-import "./globals.css";
-import { twMerge } from "tailwind-merge";
-import Head from "next/head";
+import type React from "react"
+import type { Metadata } from "next"
+import { Calistoga, Inter } from "next/font/google"
+import "./globals.css"
+import { twMerge } from "tailwind-merge"
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
-const calistoga = Calistoga({ subsets: ['latin'], variable: '--font-serif', weight: ["400"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
+const calistoga = Calistoga({ subsets: ["latin"], variable: "--font-serif", weight: ["400"] })
 
 export const metadata: Metadata = {
   title: "Portfólio Geovani",
   description: "Mostruário de projetos",
-};
+  icons: {
+    icon: "/favicon.png",
+  },
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
-      </Head>
-      <body className={twMerge(inter.variable, calistoga.variable, "bg-[#030712] text-white antialiased font-sans")}>{children}</body>
+      <body className={twMerge(inter.variable, calistoga.variable, "bg-[#030712] text-white antialiased font-sans")}>
+        {children}
+      </body>
     </html>
-  );
+  )
 }
+

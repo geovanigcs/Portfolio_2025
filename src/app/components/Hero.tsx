@@ -88,7 +88,7 @@ export const Hero = () => {
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-20">
             <span>👋</span>
-            <span className="font-semibold">Vamos conversar?</span>
+            <a href="mailto:geovanigcs.dev@gmail.com" className="hover:text-gray-900/80 font-semibold">Vamos conversar?</a>
           </button>
         </div>
       </div>
