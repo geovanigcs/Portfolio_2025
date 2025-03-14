@@ -12,7 +12,7 @@ export const CodeElements = () => {
           {'<div className="hero">'}
         </div>
       </HeroOrbit>
-      <HeroOrbit size={540} rotation={10}>
+      <HeroOrbit size={740} rotation={90}>
         <div className="font-mono text-xs text-pink-400/70 bg-gray-900/40 p-2 rounded border border-pink-500/20 animate-move-alternate">
           {"const [state, setState] = useState()"}
         </div>
@@ -44,7 +44,7 @@ export const DesignElements = () => {
           </svg>
         </div>
       </HeroOrbit>
-      <HeroOrbit size={550} rotation={20}>
+      <HeroOrbit size={565} rotation={85}>
         <div className="bg-gradient-to-r from-blue-500/30 to-cyan-500/30 size-12 rounded-lg border border-white/10 flex items-center justify-center animate-move-alternate">
           <svg className="size-6 text-white/70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 2L2 7l10 5 10-5-10-5z" fill="currentColor" fillOpacity="0.6" />
