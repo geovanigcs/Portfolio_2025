@@ -57,7 +57,7 @@ export const Hero = () => {
       </div>
       <div className="container">
         <div className="flex flex-col items-center">
-          <motion.div variants={avatarVariants} initial="hidden" animate={controls}>
+          <motion.div className="z-20" variants={avatarVariants} initial="hidden" animate={controls}>
             <Avatar />
           </motion.div>
           <div className="bg-black border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
