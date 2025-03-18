@@ -2,6 +2,7 @@ import droneMonitor from "@/assets/images/Drone-Monitor.png";
 import barberMonitor from "@/assets/images/Barber-Monitor.png";
 import financeMonitor from "@/assets/images/Finance-Monitor.png";
 import burgerMonitor from "@/assets/images/Burger-Monitor.png";
+import movieMonitor from "@/assets/images/Movie-Monitor.png";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
@@ -10,6 +11,18 @@ import { SectionHeader } from "./ui/SectionHeader";
 import { Card } from "./ui/Card";
 
 const portfolioProjects = [
+  {
+    company: "Gigio's",
+    year: "2024",
+    title: "Gigio's Store Drone",
+    results: [
+      { title: "Interatividade do usuário aumentada em 40% com animações dinâmicas de produtos" },
+      { title: "Taxa de visualização de produtos melhorada em 50% com animações atraentes" },
+      { title: "Engajamento do cliente elevado em 30% através de experiências visuais envolventes" },
+    ],
+    link: "https://storedrone.vercel.app/",
+    image: droneMonitor,
+  },
   {
     company: "Gigio's",
     year: "2024",
@@ -48,15 +61,15 @@ const portfolioProjects = [
   },
   {
     company: "Gigio's",
-    year: "2024",
-    title: "Gigio's Store Drone",
+    year: "2025",
+    title: "Gigio's Movie",
     results: [
-      { title: "Interatividade do usuário aumentada em 40% com animações dinâmicas de produtos" },
-      { title: "Taxa de visualização de produtos melhorada em 50% com animações atraentes" },
-      { title: "Engajamento do cliente elevado em 30% através de experiências visuais envolventes" },
+      { title: "Satisfação do usuário aumentada em 45% com navegação intuitiva e responsiva" },
+      { title: "Tempo médio de permanência no site elevado em 60% por conteúdo interativo" },
+      { title: "Retorno de visitantes melhorado em 35% com recomendações personalizadas" },
     ],
-    link: "https://storedrone.vercel.app/",
-    image: droneMonitor,
+    link: "https://gigiosmovie.vercel.app/",
+    image: movieMonitor,
   },
 ];
 

@@ -20,7 +20,7 @@ const words = [
 export default function Tape() {
   return (
     <div className="py-16 lg:py-24 overflow-x-clip items-center justify-center">
-      <motion.div drag={true} className="bg-gradient-to-r from-emerald-500 to-sky-600 -rotate-3 -mx-1">
+      <motion.div drag={true} dragElastic={true} className="bg-gradient-to-r from-emerald-500 to-sky-600 -rotate-3 -mx-1">
         <div className="flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
           <motion.div
             className="flex whitespace-nowrap"
