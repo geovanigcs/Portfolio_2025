@@ -14,7 +14,7 @@ const portfolioProjects = [
   {
     company: "Gigio's",
     year: "2024",
-    title: "Gigio's Store Drone",
+    title: "Gigio's Drone Store",
     results: [
       { title: "Interatividade do usuário aumentada em 40% com animações dinâmicas de produtos" },
       { title: "Taxa de visualização de produtos melhorada em 50% com animações atraentes" },
